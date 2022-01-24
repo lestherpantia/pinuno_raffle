@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [\App\Http\Controllers\RaffleController::class, 'index']);
-Route::get('winners', [\App\Http\Controllers\RaffleController::class, 'winners']);
+Route::get('winners/{setid}', [\App\Http\Controllers\RaffleController::class, 'winners']);
 Route::post('markAsWinner', [\App\Http\Controllers\RaffleController::class, 'markAsWinner']);
+
+Route::get('settings', [\App\Http\Controllers\SettingController::class, 'index']);
+Route::post('addset', [\App\Http\Controllers\SettingController::class, 'addset']);
+
+
+
+Route::get('import', [\App\Http\Controllers\ImportController::class, 'index']);
+Route::post('import/data', [\App\Http\Controllers\ImportController::class, 'importData']);

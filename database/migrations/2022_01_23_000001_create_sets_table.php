@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddIswinnerInMembers extends Migration
+class CreateSetsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,12 @@ class AddIswinnerInMembers extends Migration
      */
     public function up()
     {
-        Schema::table('members', function (Blueprint $table) {
-            $table->string('iswinner')->nullable()->default(null);
+        Schema::create('sets', function (Blueprint $table) {
+            $table->id();
+            $table->string('set_name', 50)->nullable();
+            $table->integer('winners')->nullable();
+            $table->integer('order')->nullable();
+            $table->timestamps();
         });
     }
 
@@ -25,8 +29,6 @@ class AddIswinnerInMembers extends Migration
      */
     public function down()
     {
-        Schema::table('members', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('sets');
     }
 }

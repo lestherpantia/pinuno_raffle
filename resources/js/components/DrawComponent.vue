@@ -13,6 +13,7 @@
             <img src="public/image/Sun_BG.png" class="sun">
 
             <h3>Pinuno Raffle 2022</h3>
+            <h2>{{ set.set_name }}</h2>
 
 
             <div class="raffleBox">
@@ -21,20 +22,19 @@
                     <div id="name"></div>
                     <div id="address"></div>
                 </div>
+                <button class="settings" v-on:click="settings"><img src="public/image/Settings_Png24.png"></button>
                 <button class="draw" v-on:click="interval">Pick a Winner</button>
                 <button class="refresh" v-on:click="reload"><img src="public/image/Redo_Png24.png"></button>
                 <button class="winners" v-on:click="listWinnersModal"><img src="public/image/trophy.png"></button>
                 <img class="confetti" src="public/image/6k2.gif">
             </div>
+
+
+
+
         </div>
 
         <img src="public/image/Flag_BG.png" class="foot-banner">
-
-
-
-
-
-
 
         <div class="modal" tabindex="-1" role="dialog" id="list_winners">
             <div class="modal-dialog modal-lg" role="document">
@@ -72,19 +72,13 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-
     </div>
 </template>
 
 <script>
 export default {
 
-    props: ['members', 'first', 'last'],
+    props: ['members', 'first', 'last', 'set'],
 
 
     data() {
@@ -154,7 +148,8 @@ export default {
                         this.displayWinner(parseInt(winner));
                     }.bind(this), 1000);
                 }
-                else {
+                else
+                {
                     let valueToAdd = winner.substr(runProc - 1, 1);
                     $('.display').append("<span>" + valueToAdd + "</span>").css({
                         'font-family'       : '"Playfair Display", serif',
@@ -163,7 +158,7 @@ export default {
                     });
                     runProc++;
                 }
-            }.bind(this), 500)
+            }.bind(this), 1000)
         },
 
         displayWinner(winner) {
@@ -173,8 +168,11 @@ export default {
 
                 if(item.id === winner)
                 {
+                    let setUse =  this.set.id;
+
                     axios.post('markAsWinner', {
-                        id : winner
+                        id      :   winner,
+                        set_id  :   setUse,
                     });
 
                     $("#name").text(item.name);
@@ -192,7 +190,7 @@ export default {
         listWinnersModal() {
             $('#list_winners').modal('show');
 
-            axios.get('winners').then(
+            axios.get('winners/' + this.set.id).then(
             response => {
                 this.winnerList = response.data.winners;
             });
@@ -200,11 +198,24 @@ export default {
 
         closeModal() {
             $('#list_winners').modal('hide');
+        },
+
+        settings() {
+            location.href = 'settings';
         }
+
+
     },
 
     mounted() {
 
+        if(this.set.length > 1)
+        {
+            $(".confetti").css("display", "block");
+            $(".draw").attr("disabled", true).text("CONTRATULATIONS WINNERS!");
+        }
+
+        console.log(this.set.set_name);
     }
 }
 </script>
@@ -239,13 +250,26 @@ export default {
 
     .main-container h3 {
         position: absolute;
-        top: 100px;
+        top: 50px;
         left: 50%;
         transform: translate(-50%, 0);
         font-size: 60px;
         font-family: 'Playfair Display', serif;
         font-weight: 800;
         color: #0138ac;
+    }
+
+
+    .main-container h2 {
+        position: absolute;
+        top: 120px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-size: 40px;
+        font-weight: 800;
+        /*-webkit-text-stroke-width: 0.1px;*/
+        /*-webkit-text-stroke-color: #34495e;*/
+        color: #333333;
     }
 
     .main-container .raffleBox {
@@ -258,7 +282,7 @@ export default {
         border: 1px solid #000;
         background: #fff;
         z-index: 5;
-        padding: 0px 10px;
+        padding: 0 10px;
     }
 
     .raffleBox .display .number {
@@ -313,6 +337,19 @@ export default {
         width: 25px;
     }
 
+    .settings {
+        position: absolute;
+        bottom: 75px;
+        left: 5px;
+        z-index: 2;
+        background: none;
+        border: none;
+    }
+
+    .settings img {
+        width: 25px;
+    }
+
     .confetti {
         display: none;
         position: absolute;
@@ -356,6 +393,7 @@ export default {
         font-size: 13px;
         text-transform: uppercase;
     }
+
 
 
 

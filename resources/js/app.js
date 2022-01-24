@@ -7,7 +7,11 @@
 
 require('./bootstrap');
 
+import Vue from "vue"
+import VueSimpleAlert from "vue-simple-alert";
+
 window.Vue = require('vue').default;
+Vue.use(VueSimpleAlert);
 
 /**
  * The following block of code may be used to automatically register your
@@ -22,6 +26,7 @@ window.Vue = require('vue').default;
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('draw-component', require('./components/DrawComponent.vue').default);
+Vue.component('settings-component', require('./components/SettingsComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
