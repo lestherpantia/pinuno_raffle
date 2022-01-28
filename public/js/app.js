@@ -5339,6 +5339,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ['members', 'first', 'last', 'set'],
   data: function data() {
@@ -10744,7 +10748,7 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap);"]);
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Dongle&family=Inter&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n*[data-v-f4e9b984] {\n    font-family: 'Inter', sans-serif;\n}\n.header-logo[data-v-f4e9b984] {\n    background: #fff;\n    padding: 30px 0;\n}\n.header-sub[data-v-f4e9b984] {\n    background: #333333;\n    height: 20px;\n}\n.main-container[data-v-f4e9b984] {\n    position: relative;\n}\n.main-container .sun[data-v-f4e9b984] {\n    margin: 0 auto;\n    width: 500px;\n}\n.main-container h3[data-v-f4e9b984] {\n    position: absolute;\n    top: 50px;\n    left: 50%;\n    transform: translate(-50%, 0);\n    font-size: 60px;\n    font-family: 'Playfair Display', serif;\n    font-weight: 800;\n    color: #0138ac;\n}\n.main-container h2[data-v-f4e9b984] {\n    position: absolute;\n    top: 120px;\n    left: 50%;\n    transform: translate(-50%, 0);\n    font-size: 40px;\n    font-weight: 800;\n    /*-webkit-text-stroke-width: 0.1px;*/\n    /*-webkit-text-stroke-color: #34495e;*/\n    color: #333333;\n}\n.main-container .raffleBox[data-v-f4e9b984] {\n    position: absolute;\n    top: 180px;\n    left: 50%;\n    transform: translate(-50%, 0);\n    width: 600px;\n    height: 350px;\n    border: 1px solid #000;\n    background: #fff;\n    z-index: 5;\n    padding: 0 10px;\n}\n.raffleBox .display .number[data-v-f4e9b984] {\n    font-size: 100px;\n    color: #fff;\n}\n#name[data-v-f4e9b984] {\n    font-size: 30px;\n    font-weight: 600;\n    color: #333;\n    text-transform: uppercase;\n}\n#address[data-v-f4e9b984] {\n    font-size: 20px;\n    font-weight: 600;\n    color: #333;\n    text-transform: uppercase;\n}\n.draw[data-v-f4e9b984] {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    width: 100%;\n    border: 0;\n    padding: 10px;\n    font-size: 30px;\n    background: #0138ac;\n    color: #fff;\n    z-index: 2;\n}\n.foot-banner[data-v-f4e9b984] {\n    position: absolute;\n    bottom: 0;\n    right: 0;\n    z-index: 1;\n}\n.refresh[data-v-f4e9b984] {\n    position: absolute;\n    bottom: 75px;\n    right: 10px;\n    z-index: 2;\n    background: none;\n    border: none;\n}\n.refresh img[data-v-f4e9b984] {\n    width: 25px;\n}\n.settings[data-v-f4e9b984] {\n    position: absolute;\n    bottom: 75px;\n    left: 5px;\n    z-index: 2;\n    background: none;\n    border: none;\n}\n.settings img[data-v-f4e9b984] {\n    width: 25px;\n}\n.confetti[data-v-f4e9b984] {\n    display: none;\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    z-index: 1;\n}\n.winners[data-v-f4e9b984] {\n    position: absolute;\n    bottom: 73px;\n    right: 45px;\n    z-index: 2;\n    background: none;\n    border: none;\n}\n.modal .modal-dialog .modal-content .modal-body[data-v-f4e9b984] {\n    max-height: 500px;\n    overflow: auto;\n}\n.winners img[data-v-f4e9b984] {\n    width: 30px;\n}\n.winners-table[data-v-f4e9b984] {\n    width: 100%;\n}\n.winners-table tr th[data-v-f4e9b984] {\n    padding: 5px 10px;\n    border-bottom: 1px solid #b2bec3;\n    font-weight: normal;\n}\n.winners-table tr td[data-v-f4e9b984] {\n    padding: 5px 10px;\n    font-size: 13px;\n    text-transform: uppercase;\n}\n\n\n\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n*[data-v-f4e9b984] {\n    font-family: 'Inter', sans-serif;\n}\n.header-logo[data-v-f4e9b984] {\n    background: #fff;\n    padding: 30px 0;\n}\n.header-sub[data-v-f4e9b984] {\n    background: #333333;\n    height: 20px;\n}\n.main-container[data-v-f4e9b984] {\n    position: relative;\n}\n.main-container .sun[data-v-f4e9b984] {\n    margin: 0 auto;\n    width: 500px;\n}\n.main-container h3[data-v-f4e9b984] {\n    position: absolute;\n    top: 50px;\n    left: 50%;\n    transform: translate(-50%, 0);\n    font-size: 60px;\n    font-family: 'Playfair Display', serif;\n    font-weight: 800;\n    color: #0138ac;\n}\n.main-container h2[data-v-f4e9b984] {\n    position: absolute;\n    top: 120px;\n    left: 50%;\n    transform: translate(-50%, 0);\n    font-size: 40px;\n    font-weight: 800;\n    /*-webkit-text-stroke-width: 0.1px;*/\n    /*-webkit-text-stroke-color: #34495e;*/\n    color: #333333;\n}\n.main-container .raffleBox[data-v-f4e9b984] {\n    position: absolute;\n    top: 180px;\n    left: 50%;\n    transform: translate(-50%, 0);\n    width: 600px;\n    height: 350px;\n    border: 1px solid #000;\n    background: #fff;\n    z-index: 5;\n    padding: 0 10px;\n}\n.raffleBox .display .number[data-v-f4e9b984] {\n    font-size: 100px;\n    color: #fff;\n}\n#name[data-v-f4e9b984] {\n    font-size: 30px;\n    font-weight: 600;\n    color: #333;\n    text-transform: uppercase;\n}\n#address[data-v-f4e9b984] {\n    font-size: 20px;\n    font-weight: 600;\n    color: #333;\n    text-transform: uppercase;\n}\n.draw[data-v-f4e9b984] {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    width: 100%;\n    border: 0;\n    padding: 10px;\n    font-size: 30px;\n    background: #0138ac;\n    color: #fff;\n    z-index: 2;\n}\n\n/*.foot-banner {*/\n/*    position: absolute;*/\n/*    bottom: 0;*/\n/*    right: 0;*/\n/*    z-index: 1;*/\n/*}*/\n.refresh[data-v-f4e9b984] {\n    position: absolute;\n    bottom: 75px;\n    right: 10px;\n    z-index: 2;\n    background: none;\n    border: none;\n}\n.refresh img[data-v-f4e9b984] {\n    width: 25px;\n}\n.settings[data-v-f4e9b984] {\n    position: absolute;\n    bottom: 75px;\n    left: 5px;\n    z-index: 2;\n    background: none;\n    border: none;\n}\n.settings img[data-v-f4e9b984] {\n    width: 25px;\n}\n.confetti[data-v-f4e9b984] {\n    display: none;\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    z-index: 1;\n}\n.winners[data-v-f4e9b984] {\n    position: absolute;\n    bottom: 73px;\n    right: 45px;\n    z-index: 2;\n    background: none;\n    border: none;\n}\n.modal .modal-dialog .modal-content .modal-body[data-v-f4e9b984] {\n    max-height: 500px;\n    overflow: auto;\n}\n.winners img[data-v-f4e9b984] {\n    width: 30px;\n}\n.winners-table[data-v-f4e9b984] {\n    width: 100%;\n}\n.winners-table tr th[data-v-f4e9b984] {\n    padding: 5px 10px;\n    border-bottom: 1px solid #b2bec3;\n    font-weight: normal;\n}\n.winners-table tr td[data-v-f4e9b984] {\n    padding: 5px 10px;\n    font-size: 13px;\n    text-transform: uppercase;\n}\n.logo[data-v-f4e9b984] {\n    width: 250px;\n}\n.banner[data-v-f4e9b984] {\n    position: fixed;\n    width: 100%;\n    height: calc(100vh - 170px);\n}\n\n\n\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -31737,14 +31741,12 @@ var render = function () {
       _vm._v(" "),
       _c("div", { staticClass: "header-sub" }),
       _vm._v(" "),
+      _c("img", {
+        staticClass: "banner",
+        attrs: { src: "public/image/Pinunos.jpg", alt: "" },
+      }),
+      _vm._v(" "),
       _c("div", { staticClass: "main-container text-center" }, [
-        _c("img", {
-          staticClass: "sun",
-          attrs: { src: "public/image/Sun_BG.png" },
-        }),
-        _vm._v(" "),
-        _c("h3", [_vm._v("Pinuno Raffle 2022")]),
-        _vm._v(" "),
         _c("h2", [_vm._v(_vm._s(_vm.set.set_name))]),
         _vm._v(" "),
         _c("div", { staticClass: "raffleBox" }, [
@@ -31776,11 +31778,6 @@ var render = function () {
           }),
         ]),
       ]),
-      _vm._v(" "),
-      _c("img", {
-        staticClass: "foot-banner",
-        attrs: { src: "public/image/Flag_BG.png" },
-      }),
       _vm._v(" "),
       _c(
         "div",
@@ -31859,7 +31856,10 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "header-logo text-center" }, [
-      _c("img", { attrs: { src: "public/image/Pinuno_Logo.png" } }),
+      _c("img", {
+        staticClass: "logo",
+        attrs: { src: "public/image/pinunoLogo.png" },
+      }),
     ])
   },
   function () {

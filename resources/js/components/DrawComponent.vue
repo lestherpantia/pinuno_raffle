@@ -2,17 +2,21 @@
 
     <div class="w-100" style="background: #ebf7ff; height: 100vh">
         <div class="header-logo text-center">
-            <img src="public/image/Pinuno_Logo.png">
+            <img class="logo" src="public/image/pinunoLogo.png">
         </div>
 
         <div class="header-sub"></div>
 
 
+        <img class="banner" src="public/image/Pinunos.jpg" alt="">
+
+
         <div class="main-container text-center">
 
-            <img src="public/image/Sun_BG.png" class="sun">
+<!--            <img src="public/image/Sun_BG.png" class="sun">-->
 
-            <h3>Pinuno Raffle 2022</h3>
+
+<!--            <h3>Pinuno Raffle 2022</h3>-->
             <h2>{{ set.set_name }}</h2>
 
 
@@ -34,7 +38,7 @@
 
         </div>
 
-        <img src="public/image/Flag_BG.png" class="foot-banner">
+<!--        <img src="public/image/Flag_BG.png" class="foot-banner">-->
 
         <div class="modal" tabindex="-1" role="dialog" id="list_winners">
             <div class="modal-dialog modal-lg" role="document">
@@ -317,12 +321,12 @@ export default {
         z-index: 2;
     }
 
-    .foot-banner {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        z-index: 1;
-    }
+    /*.foot-banner {*/
+    /*    position: absolute;*/
+    /*    bottom: 0;*/
+    /*    right: 0;*/
+    /*    z-index: 1;*/
+    /*}*/
 
     .refresh {
         position: absolute;
@@ -392,6 +396,16 @@ export default {
         padding: 5px 10px;
         font-size: 13px;
         text-transform: uppercase;
+    }
+
+    .logo {
+        width: 250px;
+    }
+
+    .banner {
+        position: fixed;
+        width: 100%;
+        height: calc(100vh - 170px);
     }
 
 
