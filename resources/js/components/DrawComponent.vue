@@ -266,7 +266,7 @@ export default {
 
     .main-container h2 {
         position: absolute;
-        top: 120px;
+        top: 100px;
         left: 50%;
         transform: translate(-50%, 0);
         font-size: 40px;
