@@ -31747,7 +31747,17 @@ var render = function () {
       }),
       _vm._v(" "),
       _c("div", { staticClass: "main-container text-center" }, [
-        _c("h2", [_vm._v(_vm._s(_vm.set.set_name))]),
+        _c(
+          "h2",
+          {
+            staticStyle: {
+              padding: "10px 30px",
+              background: "#d63031",
+              color: "#fff",
+            },
+          },
+          [_vm._v(_vm._s(_vm.set.set_name))]
+        ),
         _vm._v(" "),
         _c("div", { staticClass: "raffleBox" }, [
           _vm._m(1),

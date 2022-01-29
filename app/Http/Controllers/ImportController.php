@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
 
+set_time_limit(50000); //
+
+
 class ImportController extends Controller
 {
     public function index() {
@@ -41,19 +44,39 @@ class ImportController extends Controller
             {
                 try
                 {
-                    $newMember = new Member();
-                    $newMember->name = strtoupper(str_replace(['?'], ['Ñ'], $data[0]));
-                    $newMember->address = strtoupper(str_replace(['?'], ['Ñ'], $data[1]));
-                    $newMember->mobile_number = $this->checkMobileNumberFormat($data[2]);
-                    $newMember->iswinner = null;
-                    $newMember->set_id = null;
-                    $newMember->save();
 
-                    $importCount++;
+                    $duplicate = Member::where('name', 'LIKE', '%'.$data[0].'%')->first();
+
+                    if(!$duplicate) {
+                        $newMember = new Member();
+                        $newMember->name = strtoupper(str_replace(['?'], ['Ñ'],$data[0]));
+                        $newMember->address = strtoupper(str_replace(['?'], ['Ñ'], $data[1]));
+                        $newMember->mobile_number = $this->checkMobileNumberFormat($data[2]);
+                        $newMember->iswinner = null;
+                        $newMember->set_id = null;
+                        $newMember->save();
+                        $importCount++;
+                    }
                 }
                 catch(QueryException $ex)
                 {
-                    return $newMember->name;
+                    continue;
+                    dd($data[0]);
+//                    $repSpecCharName = preg_replace("/[^a-zA-Z0-9\s]/", "", $newMember->name);
+//                    $repSpecCharAddress = preg_replace("/[^a-zA-Z0-9\s]/", "", $newMember->address);
+//
+//                    if(!empty($res))
+//                    {
+//                        $newMember = new Member();
+//                        $newMember->name = $repSpecCharName;
+//                        $newMember->address = $repSpecCharAddress;
+//                        $newMember->mobile_number = $this->checkMobileNumberFormat($data[2]);
+//                        $newMember->iswinner = null;
+//                        $newMember->set_id = null;
+//                        $newMember->save();
+//                    }
+//
+//                    continue;
                 }
             }
         }

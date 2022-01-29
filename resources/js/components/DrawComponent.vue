@@ -17,7 +17,7 @@
 
 
 <!--            <h3>Pinuno Raffle 2022</h3>-->
-            <h2>{{ set.set_name }}</h2>
+            <h2 style="padding: 10px 30px; background: #d63031; color: #fff">{{ set.set_name }}</h2>
 
 
             <div class="raffleBox">
