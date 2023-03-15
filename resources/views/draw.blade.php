@@ -10,6 +10,8 @@
     <h3>Hello World!</h3>
 
     <div id="app">
+        <!-- Sean -->
+        <h1>TALONG NI JUSWAAAA</h1>
         <draw-component
             :members = "{{$getMembers}}"
             :first = "{{ $firstNumber }}"
