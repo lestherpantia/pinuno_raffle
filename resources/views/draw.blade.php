@@ -6,9 +6,9 @@
 
 @section('content')
 
+    {{--  lesther create h3 in draw blade  --}}
+    <h3>Hello World!</h3>
 
-    <!-- ALEX - CREATE P TAG -->
-    <p>HELLO UNIVERSE</p>
     <div id="app">
         <draw-component
             :members = "{{$getMembers}}"
@@ -17,5 +17,10 @@
             :set = "{{ $setInUse }}">
         </draw-component>
     </div>
+    
+
+
+    <!-- ALEX - CREATE P TAG -->
+    <p>HELLO UNIVERSE</p>
 @stop
 
