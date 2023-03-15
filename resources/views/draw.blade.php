@@ -5,10 +5,6 @@
 <h1> Joshua pogi </h1>
 
 @section('content')
-
-    {{--  lesther create h3 in draw blade  --}}
-    <h3>Hello World!</h3>
-
     <div id="app">
         <!-- Sean -->
         <h1>TALONG NI JUSWAAAA</h1>
@@ -20,7 +16,8 @@
         </draw-component>
     </div>
     
-
+<!-- add paragraph by mj  -->
+<p style="font-size: 50px;">mj josh pat alex sean lesther renzon</p>
 
     <!-- ALEX - CREATE P TAG -->
     <p>HELLO UNIVERSE</p>
