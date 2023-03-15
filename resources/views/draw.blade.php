@@ -1,6 +1,8 @@
 @extends('layout.header')
 
+<!-- Joshua's Changes -->
 
+<h1> Joshua pogi </h1>
 
 @section('content')
     <div id="app">
