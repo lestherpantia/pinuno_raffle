@@ -1,6 +1,8 @@
 @extends('layout.header')
 
+<!-- Joshua's Changes -->
 
+<h1> Joshua pogi </h1>
 
 @section('content')
 
@@ -15,5 +17,10 @@
             :set = "{{ $setInUse }}">
         </draw-component>
     </div>
+    
+
+
+    <!-- ALEX - CREATE P TAG -->
+    <p>HELLO UNIVERSE</p>
 @stop
 
